@@ -52,7 +52,7 @@ public:
             cout << "Ingrese el nombre del nuevo Jugador:";
             AdicionarJugador();
             imprimirDatosJugadores();
-            cout << "Esta es la tabla donde empezaran a jugar bajo mis reglas muajaja xd" << endl;
+            cout << "Esta es la tabla donde empezaran a jugar bajo mis reglas ;)" << endl;
             tabla->IngresoDatos();
             tabla->mostrar();
             cout << "Solo falta un paso mas para que los deje en paz y gobiernen sobre mi hermoso reino\n";
