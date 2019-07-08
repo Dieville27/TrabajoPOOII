@@ -97,7 +97,7 @@ al_init_image_addon();//Revisará si hay errores
 
      fila_eventos = al_create_event_queue();
      if (!fila_eventos){
-         error_msg("Falha ao inicializar o fila de eventos");
+         error_msg("Falla al inicializar cola de eventos");
          al_destroy_display(pantalla);
          return -1;
      }
@@ -164,8 +164,8 @@ al_init_image_addon();//Revisará si hay errores
 
 }
 
-         // Colorea el mapa de bits correspondiente al centro del rectángulo,
-         // con el color condicionado al contenido de la bandera na_area_central
+         // Muestra el mapa de bits correspondiente al FONDO2.bmp,
+        
 
  al_set_target_bitmap(area_central);
          if (!na_area_central){
@@ -208,7 +208,7 @@ al_set_target_bitmap(area_derecha);
 
 
 
-     // Desaloca os recursos utilizados na aplicação
+     // Destruye recursos utilizados
 
      al_destroy_bitmap(boton_salir);
      al_destroy_bitmap(area_central);
