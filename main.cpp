@@ -4,10 +4,10 @@
 #include <allegro5/allegro_native_dialog.h>
 #include <allegro5/allegro_font.h>
 #include "string.h"
-//Encabezado adicional para el uso de im·genes
+//Encabezado adicional para el uso de im√°genes
 #include <allegro5/allegro_image.h>
 
- // Atributos da tela
+ // Atributos de la pantalla
  #define LARGO_PANTALLA 800
  #define ALTURA_PANTALLA 530
 
@@ -16,7 +16,7 @@ using namespace std;
 
 void error_msg(char *text) {
 al_show_native_message_box(NULL,"ERROR",
-"OcurriÛ el siguiente error y el programa terminar·:",
+"Ocurri√≥ el siguiente error y el programa terminar√°:",
 text,NULL,ALLEGRO_MESSAGEBOX_ERROR);
  }
 
@@ -29,7 +29,7 @@ text,NULL,ALLEGRO_MESSAGEBOX_ERROR);
      ALLEGRO_BITMAP *boton_salir = NULL,*area_central = 0, *area_derecha = 0;
 
 
-     // Flag que condicionar· el bucle
+     // Flag que condicionar√° el bucle
      int sair = 0;
 
      if (!al_init()){
@@ -51,7 +51,7 @@ al_init();
 
 
 
-     // Habilita el uso del mouse en la aplicaciÛn.
+     // Habilita el uso del mouse en la aplicaci√≥n.
      if (!al_install_mouse()){
          error_msg("Falla al inicializar el mouse");
          al_destroy_display(pantalla);
@@ -64,7 +64,7 @@ al_init();
          al_destroy_display(pantalla);
          return -1;
      }
-al_init_image_addon();//Revisar· si hay errores
+al_init_image_addon();//Revisar√° si hay errores
 
 
     ALLEGRO_BITMAP* imagen1 = al_load_bitmap("FONDO1.bmp");
@@ -79,7 +79,7 @@ al_init_image_addon();//Revisar· si hay errores
          return -1;
      }
 
-     // // Configuramos el botÛn para cerrar la aplicaciÛn.
+     // // Configuramos el bot√≥n para cerrar la aplicaci√≥n.
       area_derecha = imagen3;
      if (!area_derecha){
          error_msg("Falla al crear el bitmap");
@@ -124,7 +124,7 @@ al_init_image_addon();//Revisar· si hay errores
              // Si el evento fue movimiento del mouse
              if (evento.type == ALLEGRO_EVENT_MOUSE_AXES){
 
-                 // Verificamos si est· sobre la regiÛn del rect·ngulo central
+                 // Verificamos si est√° sobre la regi√≥n del rect√°ngulo central
                  if (evento.mouse.x >= 80 && evento.mouse.x <= 396 && evento.mouse.y >= 418 && evento.mouse.y <= 478){
                      na_area_central = 1;
                  }
@@ -164,7 +164,7 @@ al_init_image_addon();//Revisar· si hay errores
 
 }
 
-         // Colorea el mapa de bits correspondiente al centro del rect·ngulo,
+         // Colorea el mapa de bits correspondiente al centro del rect√°ngulo,
          // con el color condicionado al contenido de la bandera na_area_central
 
  al_set_target_bitmap(area_central);
@@ -208,7 +208,7 @@ al_set_target_bitmap(area_derecha);
 
 
 
-     // Desaloca os recursos utilizados na aplicaÁ„o
+     // Desaloca os recursos utilizados na aplica√ß√£o
 
      al_destroy_bitmap(boton_salir);
      al_destroy_bitmap(area_central);
