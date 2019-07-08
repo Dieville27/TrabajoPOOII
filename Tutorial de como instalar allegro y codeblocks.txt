@@ -1,0 +1,2 @@
+https://www.allegro.cc/manual/5/
+https://github.com/j3soon/Allegro5Template/blob/master/docs/README.md#codeblocks

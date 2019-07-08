@@ -1,0 +1,4 @@
+C:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\include\
+C:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\lib\
+C:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\lib\liballegro_monolith-debug.dll.a
+C:\allegro-mingw-gcc6.2.0-x86-static-5.2.2\allegro\lib\liballegro_monolith.dll.a
